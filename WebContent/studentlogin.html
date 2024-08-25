@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Login</title>
+    <script type="text/javascript">
+function val()
+{
+	var a=document.register.pass.value;
+	var b=document.register.t3.value;
+	if(a!=b)
+		{
+			alert("password doesn't matched");
+			return false;
+		}
+	if((a.length)<8)
+		{
+		alert("Enter Strong password");
+		return false;
+		}
+	}
+    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/start.js"></script>
+    <style type="text/css">
+    *{margin:0;padding:0;outline:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{overflow-y:scroll;}
+table{border-collapse:collapse;border-spacing:0;width:100%;}
+fieldset,img{border:0;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;outline:none;}
+    body{color:#fff;background-size:cover;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:13px;background-image:url("images/banner2.jpg");
+        }
+.fleft{float:left;}.fright{float:right;}.h1{font-size:20px;}.h2{font-size:15px;}.h3{font-size:12px;}.hidden{display:none;}
+#topbar_main{background:#444148;color:#fff;font-family:fantasy,cursive,Arial, Helvetica, sans-serif;font-size:30px;position:fixed;width:100%;z-index:1000; text-align: center;}
+#topbar_wrap{margin:auto;width:1000px;font-size:33px;padding:10px 0px;}
+#wide_body_wrap{ width:100vw;
+        height: 100vh;}
+#body_wrap{margin:auto;width:1000px;padding:60px 0px 50px 0px;}
+#login_wrap{font-size:15px;}
+#signup_wrap{display:none;font-size:15px;}
+.data-container{width:100%;margin-bottom:15px;font-size:15px;border-radius:6px;border:#bbb thin solid;padding:10px;}
+#l_warn, #c_warn{background:#ff8;border:#d22 1px solid;border-radius:2px;color:#222;display:none;font-size:14px;margin-bottom:10px;padding:5px;text-align:center;width:100%;}
+.button{color:#fff;background:#666;border:none;border-radius:3px;cursor:pointer;font-weight:bold;padding:7px 10px;text-shadow:#666 0px 1px 0px;}
+.button.blue{background:#1f8fdf;}
+.button:active{box-shadow:inset #222 0px 1px 5px;}
+.button:hover{background:#444;}
+.button.blue:hover{background:#07c;}
+.clear{clear:both;display:block;}
+#updates_wrap{
+	border-top:#c6d8e4 thin solid;
+	color:#fff;
+	font-size:15px;
+	position:fixed;
+	bottom:0px;
+	background:#07c;
+	width:100%;
+}
+#updates_wrap #container{
+	margin:auto;
+	width:900px;
+}
+#updates_wrap #container .updates{
+	padding:10px;
+}
+#bottom_wrap{
+	border-top:#c6d8e4 thin solid;
+	position:fixed;
+	bottom:0px;
+	background:#500;
+	padding:5px;
+	width:100%;
+}
+a:link,a:visited,a:active{color:#ccd;text-decoration:none;}
+a:hover,a:focus{text-decoration:underline;}
+#bottom_wrap a:link,#bottom_wrap a:visited,#bottom_wrap a:active{color:#222;text-decoration:none;}
+#bottom_wrap a:hover,#bottom_wrap a:focus{text-decoration:underline;}
+    @media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  *{
+    width: 100%;
+  }
+        img{
+            display: none;
+        }
+}
+    </style>
+</head>
+<body bgcolor="Blue">
+<div id="topbar_main"><div id="topbar_wrap">GITA E-Library</div></div>
+<div id="wide_body_wrap">
+	<div id="body_wrap">
+		<div style="padding-top:80px;">
+			<div style="float:right;width:630px;text-shadow:#777 1px 1px;">
+				
+				
+			</div>
+			<center>
+			<div style="width:350px;background:url('images/wash1.png');padding:10px;">
+				<div id="login_wrap">
+					<form id="login_form" action="StudentLogin" method="post" onSubmit="return login_fun()">
+					<div class="h1" style="padding:10px 0px;">
+					<span id="l_heading" class="fleft">Sign In</span>
+					
+					<div class="clear"></div>
+					</div>
+					<div>
+										<input class="data-container" id="t1" type="text" name="name" autofocus autocomplete="on" placeholder="Enter Your Name">
+					</div>
+					<div>
+										<input class="data-container" id="t2" type="password" name="pass" placeholder="Enter Your Password" >
+					</div>
+					<div id="l_warn"></div>
+					<table width="100%">
+					<tr>
+					<td>
+					<div><a href="forgot.html">Forgot Password?</a></div>
+					</td>
+					<td align="right"><input class="button black" id="logger_submit" title="Login to your account" type="submit" value="Login"></td>
+					</tr>
+					</table>
+					<div style="margin:10px 0px;f/ont-size:14px;">New here? <a id="creator" href="#" onClick="return creator_fun()">Create an account</a></div>
+					</form>
+				</div><!--login_wrap-->
+				<div id="signup_wrap">
+					<form action="Resister" method="post" onsubmit="return val()" name="register">
+						<div class="h1" style="padding:10px 0px;">
+							<span id="c_heading" class="fleft">Create an account</span>
+							<div class="clear"></div>
+						</div>
+						<div>
+												<input class="data-container" type="text" name="name" placeholder="Enter User Name"  required>
+						</div>
+						<div>
+						<input type="password" placeholder="Create Password" class="data-container" name="pass" required>
+<!--							to be edited-->
+						
+						</div>
+						<div>
+<!--						<input type="text" placeholder="Date of Birth" class="data-container" id="creator_b" name="b">-->
+							
+						</div>
+						<div>
+														<input class="data-container" id="t3" type="password" name="t3" placeholder="Confirm Password" autocomplete="off" style="" required/>
+						</div>
+						<div>
+														<input class="data-container" id="t4" type="email" name="t4" placeholder="Enter Email Id" required/>
+						</div>
+						<div>
+														<input class="data-container" id="t5" type="text"  name="t5" placeholder="Enter Roll Number" required/>
+						</div>
+                        <div>
+														<input class="data-container" id="t6" type="text"  name="t6" placeholder="First Name" required/>
+						</div>
+                        <div>
+														<input class="data-container" id="t7" type="text"  name="t7" placeholder="Last Name" required/>
+						</div>
+                        <lable style="float:left;">DOB:</lable>
+                        <div>
+														<input class="data-container" id="t8" type="Date"  name="t8" placeholder="Enter DOB" required/>
+						</div>
+                        <lable style="float:left;">Gender:</lable>
+                        <div>
+														
+                            <select name="t9" class="data-container" required>
+                            <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+						</div>
+                        <div>
+														<input class="data-container" id="t10" type="text"  name="t10" placeholder="Enter Department" required/>
+						</div>
+                        <div>
+														<input class="data-container" id="t11" type="text"  name="t11" placeholder="Enter Semester" required/>
+						</div>
+                        <div>
+														<input class="data-container" id="t12" type="text"  name="t12" placeholder="Enter Contact number" required/>
+						</div>
+                        <div>
+														<input class="data-container" id="t13" type="text"  name="t13" placeholder="Enter Address" required/>
+						</div>
+						<div id="c_warn"></div>
+						<table width="100%">
+							<tr>
+								<td><a href="/login" id="logger" onClick="return logger_fun()">Cancel Sign Up</a></td>
+								<td align="right"><input id="create_submit" class="button black" type="submit" value="Sign Up"/></td>
+							</tr>
+						</table>
+					</form>
+				</div><!--signup wrap-->
+			</div>
+			</center>
+			<div class="clear"></div>
+		</div>
+	</div><!--body wrap-->
+</div><!--wide body wrap-->
+
+</body>
+</html>

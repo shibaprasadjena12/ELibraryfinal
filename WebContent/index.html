@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>E-Library</title>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+	
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<!-- //css files -->
+	
+	<!--web font--> 
+	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<!--//web font-->
+
+</head>
+
+<body>
+
+<!-- header -->
+<header>
+	<div class="container">
+		<div class="header d-lg-flex align-items-center">
+			<div class="header-agile">
+				<h1>
+					<a class="navbar-brand logo" href="index.html">
+						<span class="fa fa-book"></span>
+					</a>
+				</h1>
+			</div>
+			<div class="nav_w3ls">
+				<nav>
+					<label for="drop" class="toggle mt-lg-0 mt-2"><span class="fa fa-bars" aria-hidden="true"></span></label>
+					<input type="checkbox" id="drop" />
+						<ul class="menu">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li class=""><a href="#about">About</a></li>
+							<!--<li class=""><a href="services.html">Login</a></li>-->
+                            <li class="p-0">
+							<!-- First Tier Drop Down -->
+							<label for="drop-2" class="toggle">Login <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+							<a href="#">Login <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+							<input type="checkbox" id="drop-2"/>
+							<ul class="inner-dropdown">
+								<li><a href="adminsignin.html">As Admin</a></li>
+								<li><a href="studentlogin.html">As Student</a></li>
+							</ul>
+                                
+							
+							<li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contactus">Contact Us</a></li>
+                            <li>
+                            	<div class="search">
+								<center>
+									<form action="search.jsp">
+										<input type="text" name="search" placeholder="Enter Name or ID or Publisher">
+										<input type="submit" value="Search Book">
+									</form>
+								</center>
+								</div>
+                            </li>
+						</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- //header -->
+
+<!-- banner -->
+<div class="banner_w3lspvt" id="home">
+	<div class="container">
+		<div class="banner-tops-style">
+			<div class="style-banner"><center>
+				<h2 class="text-wh">A library is a house of hope.<br> It's a place where we all, whatever our situation,<br> can feed our ideas and develop our dreams.</h2>
+                </center>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- about -->
+<section class="about py-5" id="about">
+	<div class="container py-sm-4">
+		<div class="heading-grid text-center"><br><br>
+			<h5>About our Library</h5>
+            <center>
+			<img src="http://www.gita.edu.in/gita/department/xlib.JPG" height="200px" width="80%">
+                </center>
+		</div>
+		<div class="row">
+			<div>
+<!--
+				<h3>Business, Development, Growth, Technology, Industry, Professionals Team, agreement</h3>
+				<h5>Vestibulum ullamcorper a massa eu fringilla. Integer ultrices finibus nisi aliquet leo elit.</h5>
+-->
+				<p class="mt-4" style="width:100vw">A library is the best possible imitation, by human beings, of a divine mind, where the whole universe is viewed and understood at the same time. - Umberto Eco:: Scott Granneman<br>
+Overview :<br>
+The Central Library was initially setup in 2004 in the west block of the Institute. It moved to the main/existing building of the Institute in February 2017 and inaugurated by Hon’ble Chairman Dr. Satya Prakash Panda in presence of Mr.B.N.Panda Vice-Chairman, Dr.C.D.Panda Secretary, Dr.M.K.Roul Principal, Dr.P.K.Rautray DEAN (Administration), Dr.S.C.Mohapatra Vice-Principal and other esteemed persons of the college. The Library is spread over three floors with the total covered area of 2480 sq. mts. (approx.) and is centrally air-conditioned.
+The GITA Library System comprises of a Central Library and 08 departmental libraries that collectively support the teaching, research and learning in the Institute. The Central Library houses a total collection of over 35 thousands books, 98 National and International journals, 24 magazines, 3597 video cassettes and 17 Newspapers in the fields of science, engineering, humanities, literature and management. GITA Library also provides lots of e-resources like IEEE, Science Direct, Sage, Springer and Emerald etc. All in-house operations in the library are fully computerized using the LibSys software package that also provides web-based access to the online catalogue of the Library. The whole premise of Central Library is under CCTV Surveillance. Central library is supported with 24X7 high speed wifi for the library users.
+The GITA Library commits to;<br>
+• Envision the research, teaching, and learning needs of its users and provide better support services;<br>
+• Provide access to internal and external information resources and promote their innovation usage;<br>
+• Ensure the preservation, long-lasting availability and enhancement of library resources;<br>
+• Create hospitable physical and virtual environments for study, teaching, and research;<br>
+• Collaborate with faculty members of the college to enrich & enhance the research and learning community;<br>
+• Develop, encourage, and sustain expertise, skill, commitment and an innovative spirit in its staff.<br>
+Library Automation:<br>
+The GITA Central Library was fully automated and operated in 2010 using the integrated library management software (Libsys). It provides several modules like Acquisition, Cataloguing, Circulation, Serials and WebOPAC. GITA library is providing the smart identity card to the students and faculty members to get the library facilities. Library users check their transaction details using WebOPAC anywhere and they put their book reservation using Online Public Access Catalogue.<br>
+Institutional Repository: http://192.168.0.3/academic/GITA e-Resources.<br>
+GITA Central library has setup a repository to management of e-resource. The following materials available in repository;<br>
+Conference Proceeding, Course Material, E-Books, E-Journals, Faculty Publication, Lecture Note, NPTEL, Online Course Video Lectures – IIT Delhi-NPTEL, Question Papers Tutorials Video Lectures Flip Learning NDL (National Digital Library) Resources. Etc.<br>
+Physical Infrastructure, Layout and Floor Plans:<br>
+The floor-wise distribution of services and resources of the Library is given below: <br><strong>Ground Floor</strong> 1. Reception<br>
+2. Text Book & Book Bank Section<br>
+3. Circulation Counter<br>
+4. Reference Section for Faculty Members with 150 seating capacity.<br>
+5. Periodical Section (Journals/Magazines/Newspapers etc).<br>
+6. Property Counter<br>
+7. Security post<br>
+<strong>First Floor</strong><br> 1. Librarian’s Office<br>
+2. Reference Section -1 with 150 seating capacity.<br>
+3. Reference Section -2 with 150 seating capacity.<br>
+4. Book Binding<br>
+5. Reprography<br>
+6. Lamination<br>
+7. Spiral Binding<br>
+8. Printing<br>
+9. Scanning<br>
+<strong>Second Floor</strong><br>
+1. Acquisition Section<br>
+2. Technical Section<br>
+3. E-Library<br>
+4. Wi-Fi Zone<br>
+5. Seminar Hall<br>
+6. E-Learning Theatre<br>
+7. Refreshment<br>
+8. Digital Library<br>
+9. Server Room<br>
+Collections and Resources The Library has widespread collections on science, technology, humanities, social science and management sciences. In addition, General and specialized collections in the Library are segregated with collection codes as mentioned below:
+                <table width="200" border="1" align="center">
+  <tr>
+    <td width="20">S/N</td>
+    <td width="60">Collections/Resources</td>
+    <td width="30">Code</td>
+    <td width="50">Location</td>
+    <td width="40">Size in Number</td>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>Text Books</td>
+    <td>TB</td>
+    <td>GFCC</td>
+    <td>14,000</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Reference Book</td>
+    <td>RB</td>
+    <td>GF, FF Ref.Sec.</td>
+    <td>17,000</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Book Bank</td>
+    <td>BB</td>
+    <td>GFCC</td>
+    <td>6,000</td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>General</td>
+    <td>GC</td>
+    <td>FFRS</td>
+    <td>1,385</td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>Journals & Magazines</td>
+    <td>JM</td>
+    <td>GFPS</td>
+    <td>122</td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>Newspapers</td>
+    <td>NP</td>
+    <td>GFPS</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>Journals (Bound Volumes)</td>
+    <td>JBV</td>
+    <td>FFRS</td>
+    <td>498</td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>CDs & Videos</td>
+    <td>CDV</td>
+    <td>FFRS</td>
+    <td>3597</td>
+  </tr>
+</table>
+<strong>Electronic Resources</strong><br />
+The GITA Central Library is providing access to current and back volumes of e-journals of DELNET, K-HUB Engineering e-library, NDL, Science Direct (Elsevier), Springer , IEEE ASPP, Emerald, DELNET, MGH e-Books, etc.<br />
+
+<strong>Library Services and Facilities</strong><br />
+
+1.	OPAC (Online Public Access Catalogue).<br />
+
+The GITA Central Library’s Online Public Access Catalogue (OPAC) can be accessed on Intranet and Internet to search all the bibliographic records available in the Central Library database through a web-based search interface or with window client of the LibSys. The OPAC can be searched by authors, titles, subjects, keywords, classified numbers and publisher names. The OPAC also provides information about new arrivals of journals/books, etc. in the Library and Library users can put the reservation for the books using Online Public Access Catalogue.<br />
+
+2.	Reader's Assistance.<br />
+
+The Library professionals are always ready to provide assistance to its users ranging from location of a book to finding specific information required by a user. A suggestion book is maintained with librarian, where the users of the library can suggest measures for improvements in its facilities and services.<br />
+3.	Facilities <br />
+
+	1.Book Bank<br />
+	2.DDS (Document Delivery Services)<br />
+	3.CAS (Current Awareness Services)<br />
+	4.ILL – (Inter Library Loan)<br />
+	5.Book Binding<br />
+	6.Reprography<br />
+	7.Lamination<br />
+	8.Spiral Binding<br />
+	9.Printing<br />
+	10.Scanning<br />
+	11.E-Library <br />
+	12.Wi-Fi Zone<br />
+	13.Seminar Hall/Online Theatre<br />
+	14.E-Learning Theatre<br />
+	15.Refreshment<br />
+	16.Digital Library<br />
+	17.GD Hall<br />
+	18.Future Plans:<br />
+1.	Implementation of RFID Services<br />
+2.	Library services will be available at user’s desktop.<br />
+3.	24x7 Library Services<br />
+For any query regarding library services, please feel free: <br />
+<table width="697" border="0" style="width:100vw">
+  <tr>
+    <td width="250">&nbsp;</td>
+    <td width="183" align="center"><img src="http://www.gita.edu.in/gita/department/tl.JPG"/></td>
+    <td width="250">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">Dr.Sushanta Kumar Sahoo<br />
+M.A.(Hist.), PGDCA, PGDLAN, LAN (NISCAIR), BLIS, MLIS, Ph.D (UTKAL UNIVERSITY)
+Librarian<br />
+Mobile: 9937199713 E-Mail Id: librarian@gita.edu.in<br />
+
+</td>
+    
+  </tr>
+</table>
+</p>
+                
+			</div>
+            <div>
+<!--            <img src="https://static.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/4445/2018/9/28/CentralLibray%20GITA%20Bhubaneswar_Library.jpg" height="200px" width="600px;">-->
+            </div>
+<!--
+			<div class="col-lg-6 about-right position-relative mt-lg-0 mt-5">
+				<img src="images/about2.jpg" alt="" class="img-fluid img-border ml-lg-5" />
+				<img src="images/about1.jpg" alt="" class="img-fluid position-absolute img-position" />
+			</div>
+-->
+		</div>
+	</div>
+</section>
+<!-- //about -->
+
+<!-- features -->
+
+
+<!-- blog -->
+<section class="blog py-5" id="gallery">
+	<div class="container py-sm-4">
+		<div class="heading-grid text-center"><br><br>
+			<h5>Gallery</h5>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 mt-lg-0 col-md-6">
+				<img src="images/blog1.jpg" class="img-fluid" alt="" />
+				
+			</div>
+			<div class="col-lg-4 mt-md-0 mt-4 col-md-6">
+				<img src="images/blog2.jpg" class="img-fluid" alt="" />
+				
+			</div>
+			<div class="col-lg-4 mt-lg-0 mt-4 col-md-6">
+				<img src="images/blog3.jpg" class="img-fluid" alt="" />
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //blog -->
+
+
+
+
+
+<!-- footer -->
+<footer class="py-5" id="contactus">
+	<div class="container" style="width:100%">
+		<div class="row footer_grids" style="width:100%">
+			<div class="col-lg-4 col-md-6 footer_right" style="width:45%;">
+				<h3 class="mb-md-4 mb-3">Contact Info</h3>
+				<p>Gandhi Institute For Technological Advancement,Badaraghunathpur,Madanpur, Bhubaneswar </p>
+				<p> <span class="fa mr-1 fa-envelope-open"></span> <a href="gita@gita.edu.in">gita@gita.edu.in</a> </p>
+				<p> <span class="fa mr-1 fa-phone"></span> 8260045026,8260045006 </p>
+				
+			</div>
+			
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-sm-5 mt-4 footer_middle" style="float:right;">
+				<h3 class="mb-md-4 mb-3">Contact Us</h3>
+				<form action="Contactus" method="post">
+					<input type="text" name="t1" id="name" placeholder="Name"><br><br>
+					<input type="email" name="t2" id="email" placeholder="Email"><br><br>
+					<label style="color:white">Query</label><br>
+					<textarea placeholder="Write your query Here.." rows="3" cols="30" name="t3"></textarea><br>
+					<input type="submit" value="Submit Query" style="background-color:Blue; border-radius:10px; color:white; border:5px;">
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+<div class="copyright text-center py-3">
+	<p>© 2019 GITA E-Library. All Rights Reserved</a> </p>
+</div>
+<!-- //footer -->
+
+<!-- move top icon -->
+<a href="#home" class="move-top text-center">
+	<span class="fa fa-angle-double-up"></span>
+</a>
+<!-- //move top icon -->
+
+</body>
+</html>
