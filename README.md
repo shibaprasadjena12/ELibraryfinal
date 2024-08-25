@@ -1,7 +1,8 @@
-#ELibrary
-To run this project in linux <br>
-#Prerequisites
+<h1>ELibrary</h1>
+To run this project in linux <be>
+<h3>Prerequisites</h3>
 JDK, Tomcat 9, Maven should be installed <br>
+  <hr>
 git clone https://github.com/shibaprasadjena12/ELibraryfinal.git <br>
 cd ELibraryfinal/ <br>
 mvn clean package <br>
